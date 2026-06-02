@@ -4,7 +4,104 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>私と私の最も大切なプロジェクトについて</title>
-    </head>
+
+        <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.5;
+            color: #333333;
+            background-color: #f9f9f9;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 30px;
+        }
+
+        header {
+            text-align: center;
+            padding: 48px 0;
+            background: #e60012;
+            color: #ffffff;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+        header p {
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.9;
+            margin: 0;
+            padding-right: 8px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #e60012;
+            border-left: 10px solid #e60012;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        h3, h4 {
+            font-size: 18px;
+            color: #444444;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 32px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        p {
+            padding-left: 8px;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        a {
+            color: #ff7eb2;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #c5517f;
+            text-decoration: underline;
+        }
+
+        /* 7. YouTube動画（iframe）を中央寄せ＆少しリッチに */
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 1); /* ほんのり影をつけて立体的に */
+        }
+
+        /* 8. フッター（一番下） */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #777777;
+        }
+    </style> </head>
     <body>
 
         <header>
