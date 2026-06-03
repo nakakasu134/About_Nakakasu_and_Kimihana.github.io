@@ -132,6 +132,13 @@ footer {
         height: auto;
         aspect-ratio: 315 / 560;
     }
+
+    #scrollTopBtn {
+        padding: 12px;
+        font-size: 14px;
+        bottom: 15px;
+        right: 15px;
+    }
 }
 
 #scrollTopBtn {
