@@ -106,6 +106,27 @@
             border-top: 1px solid #e0e0e0;
             color: #777777;
         }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            header {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            iframe {
+                width: 100%;
+                max-width: 315px;
+                height: auto;
+                aspect-ratio: 315 / 560;
+            }
+        }
     </style> </head>
     <body>
 
@@ -239,16 +260,16 @@
             <h4>「きみぶた」から「きみはな」へ</h4>
             <p>
                 「きみぶた」の展示を通じて得られたフィードバックを基に、
-                よさこいの魅力をより多くの人に伝えるためには
-                「よさこいの要素を複数組み合わせた体験の提供」
-                「より多様な人が楽しめるコンテンツの提供」
-                が必要であると考え、これらの実現に向けて
-                「きみはな」の制作を開始した。
+                よさこいの魅力をより多くの人に伝えるための
+                プロジェクト「君と花道を歩くまで」＜きみはな＞
+                を2026年から開始。鳴子型デバイスに加え、よさこいの演舞を構成する要素の一つ
+                「隊列構成」に注目し、プレイヤー同士の位置関係を活かしたマルチプレイを実装するとともに、
+                実際のよさこいチームとの連携を通じて、よりよさこいの魅力発信に繋がる展開を目指している。
             </p>
 
             <p><strong>「きみはな」プロジェクト紹介動画</strong></p>
             <iframe width="315" height="560"
-                src="https://youtube.com/embed/jgi8wiI-PdQ?feature=share"
+                src="https://youtube.com/embed/fmf4bW0ivb8?feature=share"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
