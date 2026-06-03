@@ -170,5 +170,18 @@
             <p><small>&copy; 2026 ギタあ、 All rights reserved.</small></p>
         </footer>
 
+        <button id="scrollTopBtn" title="トップへ戻る">▲</button>
+
+        <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        scrollBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        </script>
+
     </body>
 </html>

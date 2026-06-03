@@ -90,7 +90,6 @@ iframe {
     margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
-    /* ほんのり影をつけて立体的に */
 }
 
 footer {
@@ -120,4 +119,26 @@ footer {
         height: auto;
         aspect-ratio: 315 / 560;
     }
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #e60012;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #aa1111;
+    transform: scale(1.1);
 }
