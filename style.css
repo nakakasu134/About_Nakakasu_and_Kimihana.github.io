@@ -254,6 +254,13 @@ footer {
         right: 15px;
     }
 
+    #toggleAllBtn {
+        padding: 12px;
+        font-size: 14px;
+        bottom: 15px;
+        right: 15px;
+    }
+
     .vid-iframe {
         width: 100%;
         max-width: 315px;
