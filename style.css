@@ -121,20 +121,48 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: var(--head-font);
+    color: var(--text-color);
     font-size: 18px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     box-shadow: 0 4px 10px var(--shadow-color);
-    transition: background-color var(--color-transition-duration), transform 0.2s;
+    transition: background-color var(--color-transition-duration) ease,
+                transform var(--transition-duration) ease;
 }
 
 #scrollTopBtn:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.1);
+}
+
+#toggleAllBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: var(--head-font);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: background-color var(--color-transition-duration) ease,
+                transform var(--transition-duration) ease;
+}
+
+#toggleAllBtn:hover {
     background-color: var(--primary-color-dark);
     transform: scale(1.1);
 }

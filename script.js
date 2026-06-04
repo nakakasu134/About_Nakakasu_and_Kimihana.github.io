@@ -7,6 +7,34 @@ scrollBtn.addEventListener("click", function () {
     });
 });
 
+const open_close = function () {
+    const fadeBoxes = document.querySelectorAll(".fade-box");
+    const vidIframes = document.querySelectorAll(".vid-iframe");
+    const allVisible = Array.from(fadeBoxes).every(box => box.classList.contains("is-visible"))
+        && Array.from(vidIframes).every(iframe => iframe.classList.contains("is-visible"));
+    toggleAllBtn.textContent = allVisible ? "すべて閉じる" : "すべて開く";
+    return allVisible;
+}
+
+const toggleAllBtn = document.getElementById("toggleAllBtn");
+toggleAllBtn.addEventListener("click", function () {
+    const fadeBoxes = document.querySelectorAll(".fade-box");
+    const vidIframes = document.querySelectorAll(".vid-iframe");
+
+    const allVisible = open_close();
+
+    if (allVisible) {
+        // Hide all boxes and iframes
+        fadeBoxes.forEach(box => box.classList.remove("is-visible"));
+        vidIframes.forEach(iframe => iframe.classList.remove("is-visible"));
+    } else {
+        // Show all boxes and iframes
+        fadeBoxes.forEach(box => box.classList.add("is-visible"));
+        vidIframes.forEach(iframe => iframe.classList.add("is-visible"));
+    }
+    open_close();
+});
+
 const fadeContainers = document.querySelectorAll(".fade-container");
 
 fadeContainers.forEach(function (container) {
@@ -22,6 +50,7 @@ fadeContainers.forEach(function (container) {
         } else {
             toggle.textContent = toggle.textContent.replace(hiddenText, "");
         }
+        open_close();
     });
 });
 
@@ -38,5 +67,6 @@ vidIframes.forEach(function (iframe) {
         } else {
             toggle.textContent = toggle.textContent.replace(hiddenText, "");
         }
+        open_close();
     });
 });
