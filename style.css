@@ -244,7 +244,7 @@ footer {
         width: 100%;
         max-width: 315px;
         height: auto;
-        aspect-ratio: 315 / 560;
+        aspect-ratio: 9 / 16;
     }
 
     #scrollTopBtn {
@@ -265,6 +265,14 @@ footer {
         width: 100%;
         max-width: 315px;
         height: auto;
-        aspect-ratio: 315 / 560;
+        aspect-ratio: 9 / 16;
     }
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
 }
