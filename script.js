@@ -16,10 +16,25 @@ const open_close = function () {
     return allVisible;
 }
 
+const hiddenText = "を隠す";
+
+const addHiddenText = function (element) {
+    if (!element.textContent.includes(hiddenText)) {
+        element.textContent += hiddenText;
+    }
+}
+
+const removeHiddenText = function (element) {
+    if (element.textContent.includes(hiddenText)) {
+        element.textContent = element.textContent.replace(hiddenText, "");
+    }
+}
+
 const toggleAllBtn = document.getElementById("toggleAllBtn");
 toggleAllBtn.addEventListener("click", function () {
     const fadeBoxes = document.querySelectorAll(".fade-box");
     const vidIframes = document.querySelectorAll(".vid-iframe");
+    const toggles = document.querySelectorAll(".toggle");
 
     const allVisible = open_close();
 
@@ -27,10 +42,12 @@ toggleAllBtn.addEventListener("click", function () {
         // Hide all boxes and iframes
         fadeBoxes.forEach(box => box.classList.remove("is-visible"));
         vidIframes.forEach(iframe => iframe.classList.remove("is-visible"));
+        toggles.forEach(toggle => removeHiddenText(toggle));
     } else {
         // Show all boxes and iframes
         fadeBoxes.forEach(box => box.classList.add("is-visible"));
         vidIframes.forEach(iframe => iframe.classList.add("is-visible"));
+        toggles.forEach(toggle => addHiddenText(toggle));
     }
     open_close();
 });
@@ -46,9 +63,9 @@ fadeContainers.forEach(function (container) {
         fadeBox.classList.toggle("is-visible");
 
         if (fadeBox.classList.contains("is-visible")) {
-            toggle.textContent += hiddenText;
+            addHiddenText(toggle);
         } else {
-            toggle.textContent = toggle.textContent.replace(hiddenText, "");
+            removeHiddenText(toggle);
         }
         open_close();
     });
@@ -63,9 +80,9 @@ vidIframes.forEach(function (iframe) {
         iframe.classList.toggle("is-visible");
 
         if (iframe.classList.contains("is-visible")) {
-            toggle.textContent += hiddenText;
+            addHiddenText(toggle);
         } else {
-            toggle.textContent = toggle.textContent.replace(hiddenText, "");
+            removeHiddenText(toggle);
         }
         open_close();
     });
