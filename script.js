@@ -87,3 +87,12 @@ vidIframes.forEach(function (iframe) {
         open_close();
     });
 });
+
+window.crapNaruko = false;
+
+const narukoBtn = document.getElementById("narukoBtn");
+narukoBtn.addEventListener("click", function () {
+    if (!window.crapNaruko) {
+        window.crapNaruko = true;
+    }
+});
