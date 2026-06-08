@@ -1,0 +1,326 @@
+:root {
+    --head-font: 'Kaisei Opti', serif;
+    --body-font: 'Klee One', serif;
+
+    --primary-color: #ff1327;
+    --primary-color-dark: #aa1111;
+    --background-color: #000000;
+    --text-color: #f5f5f5;
+    --link-color: #e41a89;
+    --link-hover-color: #ff63e0;
+    --border-color: #cccccc;
+    --footer-color: #cccccc;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+
+    --color-transition-duration: 0.3s;
+    --transition-duration: 0.3s;
+    --transparent-transition-duration: 0.8s;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+
+header {
+    font-family: var(--head-font);
+    text-align: center;
+    padding: 48px 0;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 40px 0;
+}
+
+h2 {
+    font-family: var(--head-font);
+    font-size: 22px;
+    color: var(--primary-color);
+    border-left: 10px solid var(--primary-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3,
+h4 {
+    font-family: var(--head-font);
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+ul {
+    padding-left: 32px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+p {
+    padding-left: 8px;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--shadow-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--footer-color);
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: var(--head-font);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: background-color var(--color-transition-duration) ease,
+        transform var(--transition-duration) ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.1);
+}
+
+#toggleAllBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: var(--head-font);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: background-color var(--color-transition-duration) ease,
+        transform var(--transition-duration) ease;
+}
+
+#toggleAllBtn:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.1);
+}
+
+#narukoBtn {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    margin: 20px auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform var(--transition-duration) ease,
+                filter var(--color-transition-duration) ease;
+}
+
+#narukoBtn img {
+    width: 320px;
+    height: 320px;
+    object-fit: contain;
+}
+
+#narukoBtn:hover {
+    filter: brightness(0.7);
+}
+
+#narukoBtn:active {
+    transform: rotate(20deg);
+}
+
+.toggle {
+    display: block;
+    font-family: var(--head-font);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 10px;
+    background-color: transparent;
+    border: 0px solid var(--primary-color);
+    cursor: pointer;
+    transition: color var(--color-transition-duration) ease,
+        scale var(--transition-duration) ease;
+}
+
+.toggle:hover {
+    color: var(--primary-color);
+    scale: 1.1;
+}
+
+.fade-container {
+    margin: 20px 0;
+}
+
+.fade-box {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    color: #333333;
+    transition: opacity var(--transparent-transition-duration) ease,
+        visibility var(--transparent-transition-duration) ease,
+        transform var(--transparent-transition-duration) ease;
+}
+
+.fade-box.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.vid-container {
+    margin: 20px 0;
+}
+
+.vid-iframe {
+    width: 315px;
+    height: 560px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--shadow-color);
+    transform: translateX(-200%);
+    transition: transform var(--transparent-transition-duration) ease;
+}
+
+.vid-iframe.is-visible {
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 512px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    header {
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 315px;
+        height: auto;
+        aspect-ratio: 9 / 16;
+    }
+
+    #scrollTopBtn {
+        padding: 12px;
+        font-size: 14px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #toggleAllBtn {
+        padding: 12px;
+        font-size: 14px;
+        bottom: 75px;
+        right: 15px;
+    }
+
+    #narukoBtn img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .vid-iframe {
+        width: 100%;
+        max-width: 315px;
+        height: auto;
+        aspect-ratio: 9 / 16;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .vid-iframe {
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transparent-transition-duration) ease;
+    }
+
+    .vid-iframe.is-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}

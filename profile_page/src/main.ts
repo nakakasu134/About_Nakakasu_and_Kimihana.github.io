@@ -112,7 +112,6 @@ const sketch = (p: p5) => {
     p.noStroke();
 
     space = new HanabiSpace(p);
-    space.addHanabi(Math.random() * worldWidth, Math.random() * worldHeight);
   }
 
   function draw() {
