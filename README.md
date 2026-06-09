@@ -4,7 +4,7 @@
 </header>
 
 <a href="https://nakakasu134.github.io/About_Nakakasu_and_Kimihana.github.io" target="_blank">
-    <h2>リンク</h2>
+    リンク
 </a>
 
 <h2>使用言語・ライブラリ</h2>
