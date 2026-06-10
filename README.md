@@ -9,10 +9,7 @@
 
 <h2>使用言語・ライブラリ</h2>
 <ul>
-    <li>html</li>
-    <li>css</li>
-    <li>typescript</li>
-    <li>npm</li>
-    <li>Node.js</li>
+    <li>html、css、typescript</li>
+    <li>Node.js、npm、vite</li>
     <li>p5.js</li>
 </ul>
